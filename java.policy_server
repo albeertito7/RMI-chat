@@ -1,0 +1,7 @@
+grant {
+	permission java.net.SocketPermission "*:1024-65535", "connect,resolve,accept";
+};
+
+/*
+* It will be able to connect and accept connections from any ip
+*/

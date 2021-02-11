@@ -1,0 +1,13 @@
+grant {
+	permission java.net.SocketPermission "*:1024-65535", "connect,resolve,accept";
+};
+
+/*
+* It would be interesting to restrict the client to only connect and accept connections from the server
+* In any case, this would depend on the security policy we want to apply
+* I left it like this because it also allowed me to test locally, without adding my ip or 127.0.0.1
+*/
+
+/*
+* If the stub is to be downloaded we would have to add port 80
+*/
